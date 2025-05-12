@@ -8,7 +8,7 @@ import os
 #region #### IMPORT DATA #########   
 
 #normal data
-base_path = r"C:\Users\veron\Documents\2025 Spr\20.440\20.440_pset6\20.440 Project Data\\"
+base_path = r"C:\Users\veron\Documents\GitHub\20.440-project\20.440 Project Data\\"
 matrix_file_nl = base_path + "matrix_normal.mtx"
 features_file_nl = base_path + "features_normal.tsv"
 barcodes_folder_nl = base_path + "GSM4598899_normal_gex_barcodes.tsv/"  # Assuming a folder with multiple binary files
@@ -31,7 +31,6 @@ adata_nl.write(base_path + "adata_nl.h5ad")
 
 #TUMOR DATA
 #create an anndata object using the data from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152022
-base_path = r"C:\Users\veron\Documents\2025 Spr\20.440\20.440_pset6\20.440 Project Data\\"
 matrix_file = base_path + "matrix.mtx"
 features_file = base_path + "features.tsv"
 barcodes_folder = base_path + "GSM4598898_tumor_gex_barcodes.tsv/"  # Assuming a folder with multiple binary files
