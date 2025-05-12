@@ -1,15 +1,14 @@
-# 20.440 Project: Uncovering the Role of CD4+ T Cells in Lung Adenocarcinoma Progression
+# 20.440 Project: The Role of CD4+ Subsets in Lung Adenocarcinoma Progression Using Gene Expression
 
 ## Overview
 
-This repo aims to analyze the dataset (GSE152022) to further analyze CD4+ T cell phenotypes in lung adenocarcinoma. First CD4+ T cell subsets are identified and labeled via PCA, leiden, and UMAP display. Then, basic analysis on CD4+ T cell subset frequency and gene expression is analyzed. Gene set enrichment analysis (GSEA) is completed for a subset of genes specific to CD4+ activation, CD4+ exhaustion, and CD4+ secretion of M2-polarizing factors. 
+This repo aims to analyze the dataset (GSE152022) to further analyze CD4+ T cell phenotypes in lung adenocarcinoma. First, CD4+ T cell subsets are identified and labeled via PCA, louvain, and UMAP display. Then, cells are grouped into three CD4+ subsets: naive, helper, and regulatory. Marker genes are evaluated. Differential Gene Expression Analysis is conducted on cells from normal or tumor lungs via log fold change. Then, genes are compared between cell groups from the tumor condition where their logFC values are normalized and displayed via gene expression score (Z-score) to be compared across groups. Lastly, gene set enrichment analysis (GSEA) is completed for a subset of genes specific to CD4+ activation, CD4+ exhaustion, and CD4+ secretion of M2-polarizing factors. 
 
 This repo contains all necessary code to run the analysis for the project, "Uncovering the Role of CD4+ T Cells in Lung Adenocarcinoma Progression".
 
 All code blocks were written by Logan and Veronica with exception to publically avaiable libraries that were imported in the beginning. 
 Assignment of CD4+ T cell subset using top most expressed genes were performed with help of Enrichr (https://maayanlab.cloud/Enrichr/)
 
-The one figure that is produced and separately saved as a .png for this assignment (pset6) has been isolated to its own .py file and can be found under Code -> assignment_figure.py
 
 ## Data
 
@@ -28,16 +27,12 @@ a_Import_Data: imports the datafiles from a local folder into the variables adat
 
 b_Data_process: processes the data through filtering and quality control metrics
 
-c_UMAP_analysis: performs dimensionality reduction, clustering via leiden, and UMAP.
+c_UMAP_MarkerGene_analysis: performs dimensionality reduction, clustering via leiden, and UMAP. Marker Gene Analysis is also embedded into this file
 
-d_TF_analysis: conducts analysis looking at the main TF for each CD4+ subset
+d_DiffGeneExps_analysis: performs all differential gene expression analysis between normal v tumor, as well as between three CD4+ cell groups.
 
-e_Gene_analysis: conducts analysis with the top 20 most variable genes. 
+e_GSEA_analysis: conducts GSEA analysis
 
-assignment_figure: contains the one figure that is produced and saved in the "Figures" folder for the purposes of Pset6. It was isolated from the rest of the code found in c_UMAP_analysis for ease of running purposes. 
-
-
-440projectcode.py in the main folder is the entire .py file unseparated for tracking purposes. The code is then broken down into sub sections as seen in the "Code" folder.
 
 ## Installation
 
