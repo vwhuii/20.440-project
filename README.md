@@ -49,7 +49,7 @@ cd 20.440-pset6-done <br>
 *Extract files from a zipped folder if needed <br>
 4. Set up the conda environment (using the environment.yml file) <br>
 conda env create -f environment.yml <br>
-conda activate gsea-env #gsea-env is the environment name used in the original setup <br>
+conda activate 440env #440env is the environment name used in the original setup <br>
 5. Install packages noted in requirements.txt (scanpy, scipy, numpy, matplotlib, pandas) <br>
 pip install -r requirements.txt <br>
 6. Run .py code files <br>
