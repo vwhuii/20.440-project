@@ -45,7 +45,7 @@ To initialize, follow these steps prior to running code in VS Code or any simila
 2. Install conda software (https://www.anaconda.com/docs/getting-started/anaconda/install#windows-installation) <br>
 3. Clone the repository <br>
 git clone https://github.mit.edu/lbeatty/20.440-pset6-done <br>
-cd 20.440-pset6-done <br>
+cd 20.440-finalproject <br>
 *Extract files from a zipped folder if needed <br>
 4. Set up the conda environment (using the environment.yml file) <br>
 conda env create -f environment.yml <br>
