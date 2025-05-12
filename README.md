@@ -37,7 +37,22 @@ e_GSEA_analysis: conducts GSEA analysis
 ## Installation
 
 You will have to install the libraries needed to complete the data analysis. First, if not downlaoded already, download the newest version of Python 3.13.3. Then, you can download the necessary libraries required to run this script by using pip install library-name. 
-Libraries that are used and the versions used include: scipy (1.15.2), matplotlib (3.10.1), seaborn (0.13.2), pandas (2.2.3), scanpy (1.11.1), anndata (0.11.4), scipy (1.5.2), celltypist (1.6.3), umap-learn (0.5.7), scikit-learn (1.5.2), leidenalg (0.10.2).
+Libraries that are used and the versions used include: scipy (1.15.2), matplotlib (3.10.1), seaborn (0.13.2), pandas (2.2.3), scanpy (1.11.1), anndata (0.11.4), scipy (1.5.2), celltypist (1.6.3), umap-learn (0.5.7), scikit-learn (1.5.2), leidenalg (0.10.2). <br>
+
+To initialize, follow these steps prior to running code in VS Code or any similar Python processor: <br>
+1. Make sure that pip is installed and that Python is integrated in the PATH. The instructions in steps 2-4 are done in the terminal.<br>
+
+2. Install conda software (https://www.anaconda.com/docs/getting-started/anaconda/install#windows-installation) <br>
+3. Clone the repository <br>
+git clone https://github.mit.edu/lbeatty/20.440-pset6-done <br>
+cd 20.440-pset6-done <br>
+*Extract files from a zipped folder if needed <br>
+4. Set up the conda environment (using the environment.yml file) <br>
+conda env create -f environment.yml <br>
+conda activate gsea-env #gsea-env is the environment name used in the original setup <br>
+5. Install packages noted in requirements.txt (scanpy, scipy, numpy, matplotlib, pandas) <br>
+pip install -r requirements.txt <br>
+6. Run .py code files <br>
 
 ## References:
 Son J, Cho JW, Park HJ, Moon J et al. Tumor-Infiltrating Regulatory T-cell Accumulation in the Tumor Microenvironment Is Mediated by IL33/ST2 Signaling. Cancer Immunol Res 2020 Nov;8(11):1393-1406. PMID: 32878747
