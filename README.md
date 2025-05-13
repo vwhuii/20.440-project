@@ -6,7 +6,7 @@ This repo aims to analyze the dataset (GSE152022) to further analyze CD4+ T cell
 
 This repo contains all necessary code to run the analysis for the project, "Uncovering the Role of CD4+ Subsets in Lung Adenocarcinoma Progression Using Gene Expression".
 
-All code blocks were written by Logan and Veronica with exception to publically avaiable libraries that were imported in the beginning. 
+All code blocks were written by Logan and Veronica with exception to publically available libraries that were imported in the beginning. 
 Assignment of CD4+ T cell subset using top most expressed genes were performed with help of Enrichr (https://maayanlab.cloud/Enrichr/)
 
 
